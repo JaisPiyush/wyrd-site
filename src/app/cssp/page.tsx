@@ -8,7 +8,7 @@ export default function ChildSafetyStandardsPage() {
 
                 <div className="space-y-8">
                     <section>
-                        <h2 className="text-2xl font-semibold mb-4">TL;DR – Wyrd's Child Safety Policy</h2>
+                        <h2 className="text-2xl font-semibold mb-4">Wyrd&apos;s Child Safety Policy</h2>
                         <p>Wyrd is strictly for users aged 19 and above. We use age verification to prevent underage access. Our in-app reporting system and direct contact via phone or email allow users to report concerns. To ensure safe interactions, we employ AI-based sexual exploitation blockers in our chat system. We take all reports seriously, enforce strict actions against violations, and continuously improve our safety measures.</p>
                     </section>
 

@@ -1,6 +1,5 @@
 
 import { Image } from "@heroui/image";
-import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
 
 export default function Home() {
   return (

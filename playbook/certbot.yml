@@ -1,0 +1,39 @@
+---
+- name: Setup SSL
+  hosts: "{{ hosts }}"
+  become: yes
+  vars:
+    domain: wyrd.live
+
+  tasks:
+  - name: Update apt cache
+    apt:
+      update_cache: yes
+  - name: Install OS essentials
+    apt:
+      name: "{{ item }}"
+      update_cache: yes
+    ignore_errors: true
+    with_items:
+      - certbot
+      - python3-certbot-nginx
+  - name: 'Get certificate'
+    become: yes
+    command: 'certbot -n --nginx certonly -d {{ ansible_host }} --agree-tos --email developer@wyrd.live'
+    args:
+      creates: '/etc/letsencrypt/live/{{ domain }}'
+    ignore_errors: true
+    tags:
+      - certbot
+  - name: Setup cronjob for renewal
+    cron:
+      name: certbot-renewal
+      job: "/bin/bash -lc '/usr/local/bin/certbot -q renew'"
+      minute: "0"
+      hour: "14"
+    tags:
+      - certbot
+  
+  
+
+  

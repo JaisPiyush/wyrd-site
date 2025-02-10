@@ -9,6 +9,7 @@ export default function DeleteAccountPage() {
                     <Image
                         src="/account_page.jpg"
                         className="w-56"
+                        alt="account page"
                     />
                 </div>
 

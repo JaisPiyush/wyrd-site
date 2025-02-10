@@ -1,5 +1,4 @@
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@heroui/navbar";
-import Link from "next/link";
+import { Navbar, NavbarBrand } from "@heroui/navbar";
 
 const NavigationHeader = () => (
     <Navbar>

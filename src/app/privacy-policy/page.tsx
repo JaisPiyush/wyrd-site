@@ -6,7 +6,7 @@ export default function PrivacyPolicyPage() {
             <div className="space-y-8">
                 <section>
                     <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
-                    <p>Welcome to Wyrd. Your privacy is important to us, and we are committed to protecting the personal information you share with us. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use the Wyrd application ("App") and related services ("Services").</p>
+                    <p>Welcome to Wyrd. Your privacy is important to us, and we are committed to protecting the personal information you share with us. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use the Wyrd application (&quot;App&quot;) and related services (&quot;Services&quot;).</p>
                     <p className="mt-2">By using Wyrd, you agree to the practices described in this Privacy Policy. If you do not agree with the terms of this policy, please do not use our App or Services.</p>
                 </section>
 
@@ -77,7 +77,7 @@ export default function PrivacyPolicyPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4">8. Children's Privacy</h2>
+                    <h2 className="text-2xl font-semibold mb-4">8. Children&apos;s Privacy</h2>
                     <p>Wyrd is not intended for individuals under 18 years of age. We do not knowingly collect personal information from minors. If we become aware that a minor has provided us with personal information, we will delete it immediately.</p>
                 </section>
 
