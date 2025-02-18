@@ -10,9 +10,7 @@ export default async function DatingRoomAbout({ params }: {
         <div className="flex flex-col min-h-screen">
 
             <main className="flex-grow flex items-center justify-center">
-                <Button>
-                    <Link href={`https://www.wyrd.live/dating-room/${id}/about/`}>Open in app</Link>
-                </Button>
+                <a href={`https://www.wyrd.live/dating-room/${id}/about/`} className="outline rounded-md px-4 py-2">Open in app</a>
             </main>
 
         </div>
