@@ -1,5 +1,3 @@
-import { Button } from "@heroui/button";
-import Link from "next/link";
 
 
 export default async function DatingRoomAbout({ params }: {
