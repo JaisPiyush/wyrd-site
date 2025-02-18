@@ -23,7 +23,7 @@
     #   command: "chdir={{ project_dir }} npm run build"
     #   tags: [npm, git]
     # - name: Start NextJS site
-    #   command: "chdir={{ project_dir }} pm2 start npm - name 'wyrd-site' - start"
+    #   command: "chdir={{ project_dir }} pm2 start npm --name "wyrd-site" -- start"
     #   tags: [npm, git]
     # - name: Save pm2 process
     #   command: pm2 save && pm2 startup
@@ -47,7 +47,6 @@
           - "{{ ansible_host }}"
       tags:
         - nginx
-        - app_links
     - name: Symlink nginx file
       become: yes
       file:
@@ -57,7 +56,6 @@
         force: yes
       tags:
         - nginx
-        - app_links
     - name: Start and enable nginx service
       become: yes
       service:
@@ -66,7 +64,6 @@
         enabled: true
       tags:
         - nginx
-        - app_links
     - name: Linux Firewall setup ssh rule
       become: yes
       community.general.ufw:
