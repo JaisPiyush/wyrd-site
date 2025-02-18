@@ -1,4 +1,5 @@
 import { Button } from "@heroui/button";
+import Link from "next/link";
 
 
 export default async function DatingRoom({ params }: {
@@ -10,7 +11,7 @@ export default async function DatingRoom({ params }: {
 
             <main className="flex-grow flex items-center justify-center">
                 <Button>
-                    <a href={`https://www.wyrd.live/dating-room/${id}/`}>Open in app</a>
+                    <Link href={`https://www.wyrd.live/dating-room/${id}/`}>Open in app</Link>
                 </Button>
             </main>
 
