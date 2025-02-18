@@ -8,7 +8,7 @@ export default async function DatingRoomAbout({ params }: {
         <div className="flex flex-col min-h-screen">
 
             <main className="flex-grow flex items-center justify-center">
-                <a href={`https://www.wyrd.live/dating-room/${id}/about/`} className="outline rounded-md px-4 py-2">Open in app</a>
+                <a href={`intent://www.wyrd.live/#Intent;package=live.wyrd.wyrd;scheme=wyrd;action=OPEN_WYRD_PAGE;S.path=%2Fdating-room%2F${id}%2Fabout;end;`} className="outline rounded-md px-4 py-2">Open in app</a>
             </main>
 
         </div>
