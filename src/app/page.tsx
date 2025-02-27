@@ -1,5 +1,6 @@
 
 import { Image } from "@heroui/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,6 +19,10 @@ export default function Home() {
                 <p className="text-xl mb-6">
                   Forget swiping—meet like-minded, career-driven singles who value real conversations, genuine connections, and no wasted time.
                 </p>
+
+                <button className="bg-white text-primary font-semibold py-2 px-4 rounded-lg">
+                  <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdRliNWLYsdQJhEevwDEJAK5jj-SmRous0aIuDo-WRj67fNKA/viewform?usp=header"> Join SignUp form</Link>
+                </button>
               </div>
               <div className="md:w-1/2">
                 <Image
